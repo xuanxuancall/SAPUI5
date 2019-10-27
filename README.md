@@ -33,7 +33,7 @@ alert() ：用于显示带有一条指定消息和一个 OK 按钮的警告框
 </br>
 function(oEvent) : oEvent参数是一个 event 对象 </br>
 --方法 getSource()：获取触发源控件 </br>
-&nbsp;--方法 getId():获取触发源ID</br>
+&nbsp;&nbsp;--方法 getId():获取触发源ID</br>
 </br>
 sap.m.Label() ：标签 </br>
 --属性 text:显示的文本</br>
