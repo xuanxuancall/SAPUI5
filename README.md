@@ -1,5 +1,6 @@
 sapui5官方文档： https://sapui5.hana.ondemand.com</br>
-测试用：简单控件演示</br>
+</br>
+项目用途：简单控件演示</br>
 </br>
 项目文件结构 </br>
 WebContent</br>
