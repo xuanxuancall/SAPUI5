@@ -1,24 +1,24 @@
 sapui5官方文档： https://sapui5.hana.ondemand.com
 
-index： 简单控件演示
-代码的主要构成： 
-bootstrap 
-Application area 
-UI area
+index： 简单控件演示</br>
+代码的主要构成：</br> 
+bootstrap </br>
+Application area </br>
+UI area</br>
 
-第一个<script> 部分叫做 Bootstrap 负责加载和初始化 
-src ：UI5 所在的位置 
-data-sap-ui-libs ：UI5 的库（API） 
-data-sap-ui-theme ：主题 除了默认主题，开发人员也可以自定义主题 
-默认主题：
-sap_bluecrystal 
-sap_platium 
-sap_goldreflection 
-sap_hcb 
-sap_Belize
+第一个<script> 部分叫做 Bootstrap 负责加载和初始化 </br>
+src ：UI5 所在的位置 </br>
+data-sap-ui-libs ：UI5 的库（API） </br>
+data-sap-ui-theme ：主题 除了默认主题，开发人员也可以自定义主题 </br>
+默认主题：</br>
+sap_bluecrystal </br>
+sap_platium </br>
+sap_goldreflection </br>
+sap_hcb </br>
+sap_Belize</br>
 
-第二个<script> 部分叫做 Application area 
-以下列出ソース中使用的API 
+第二个<script> 部分叫做 Application area </br>
+以下列出ソース中使用的API </br>
 sap.ui.getCore() ：诱导sap.ui.core.Core(Core框架)，并通过sap.ui.getCore（）方法将其提供给应用程序 
 --方法 attachInit():立即调用目标函数
 
