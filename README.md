@@ -4,7 +4,7 @@ SAPUI5</br>
 </br>
 项目文件结构 </br>
 WebContent</br>
-&nbsp; &nbsp; >img
+&nbsp; &nbsp; >img</br>
 &nbsp; &nbsp; &nbsp; &nbsp; >...</br>
 &nbsp; &nbsp; >index.html </br>
 
@@ -17,7 +17,7 @@ bootstrap &nbsp; 部分</br>
 data-sap-ui-libs：追加"sap.ui.layout"诱导sap.ui.layout.Grid</br>
 其余不变</br>
 </br>
-Application area &nbsp; 部分
-sap.m.Image：加载图像
---方法 src：图像文件存储URL的相对或绝对路径
+Application area &nbsp; 部分</br>
+sap.m.Image：加载图像</br>
+--方法 src：图像文件存储URL的相对或绝对路径</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; decorative：    
