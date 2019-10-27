@@ -54,4 +54,4 @@ sap.m.MessageBox.information("...",{}) ：消息对话框,自带图标和OK按�
 第三个 部分叫做 UI area </br>
 第二部分Application area中的 </br>
 API.placeAt(...) </br>
-在<div id="...">展示</br>
+在div id="..."展示</br>
