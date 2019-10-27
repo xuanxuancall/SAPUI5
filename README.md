@@ -47,7 +47,8 @@ sap.m.RadioButton() ：单选按钮 </br>
 --属性 text:显示的文本</br>
 </br>
 sap.m.RadioButtonGroup() ：单选组 </br>
---属性 columns:指定一行中单选按钮的最大数量 ariaLabelledBy:关联目标控件 </br>
+--属性 columns:指定一行中单选按钮的最大数量 
+ariaLabelledBy:关联目标控件 </br>
 --方法 addButton()：添加单选按钮到组中 </br>
 聚合关系:父控件(单选组),子控件(单选按钮) </br>
 纵横关系:横向 父控件(单选组),子控件(单选按钮) 纵向 标签</br>
