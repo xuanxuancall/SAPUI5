@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+
+<script src="resources/sap-ui-core.js" id="sap-ui-bootstrap"
+	data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal">
+		</script>
+<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+<script>
+		<!--输出文本Hello World  sap.m.Text-->
+			sap.ui.getCore().attachInit(function() {
+				var oText = sap.m.Text({text: "Hello World"});
+				oText.placeAt("content");
+			});			
+			
+		<!--Button Java风格   sap.m.Button-->			
+			function initialization() {
+				var oButton = new sap.m.Button();
+				oButton.setText("Click me Java");
+				oButton.attachPress(onButtonPressed);
+				
+				oButton.placeAt("content");
+			};		
+			var onButtonPressed = function() {
+				alert("Hello Java!");
+			};			
+			sap.ui.getCore().attachInit(initialization);	
+			
+		<!--Button json风格  sap.m.Button-->
+			function initialization2() {
+				var oButton = new sap.m.Button({
+					text: "Click me JSON",
+					press: onButtonPressed1
+				});				
+				
+				oButton.placeAt("content");
+			};
+			var onButtonPressed1 = function() {
+				alert("Hello json!");
+			};			
+			sap.ui.getCore().attachInit(initialization2);	
+							
+		<!-- 事件处理 多个控件共用事件-->				
+			function initialization3() {
+				var oButton1 = new sap.m.Button("btn1", {
+					text: "Button 1",
+					press: onButtonPressed2
+				});	
+				
+				var oButton2 = new sap.m.Button("btn2", {
+					text: "Button 2",
+					press: onButtonPressed2
+				});
+				
+				oButton1.placeAt("content");
+				oButton2.placeAt("content");
+			};
+			
+			var onButtonPressed2 = function(oEvent) {
+				var sId = oEvent.getSource().getId();
+				
+				if (sId == "btn1") {
+					alert("Hello from Button1");
+				}
+				if (sId == "btn2") {
+					alert("Hello from Button2");
+				}
+			};		
+			
+			sap.ui.getCore().attachInit(initialization3);
+								
+		<!--包含关系-->		
+		function initialization4() {
+			
+			var oLabel = new sap.m.Label({text: "Do you like basketball?"});
+			<!--子控件 sap.m.RadioButton-->
+			var oRadioBtn1 = new sap.m.RadioButton({text: "Yes"});
+			var oRadioBtn2 = new sap.m.RadioButton({text: "No"});
+			<!--父控件  sap.m.RadioButtonGroup-->
+			var oRadioBtnGrp = new sap.m.RadioButtonGroup({columns: 2});
+			<!--父控件对其它控件 聚合(Aggregation) --> 
+			oRadioBtnGrp.addButton(oRadioBtn1);
+			oRadioBtnGrp.addButton(oRadioBtn2);
+			
+			oLabel.placeAt("content");
+			oRadioBtnGrp.placeAt("content");
+		};
+		
+		sap.ui.getCore().attachInit(initialization4);
+
+		<!--关联关系 -->	
+		function initialization5() {
+			
+			var oLabel = new sap.m.Label({text: "Do you like basketball?"});
+			
+			var oRadioBtn1 = new sap.m.RadioButton({text: "Yes"});
+			var oRadioBtn2 = new sap.m.RadioButton({text: "No"});
+			
+			var oRadioBtnGrp = new sap.m.RadioButtonGroup({
+				columns: 2,
+				<!--与控件纵横 -->
+				ariaLabelledBy: oLabel});
+			
+			oRadioBtnGrp.addButton(oRadioBtn1);
+			oRadioBtnGrp.addButton(oRadioBtn2);
+			
+			oLabel.placeAt("content");
+			oRadioBtnGrp.placeAt("content");
+		};
+		
+		sap.ui.getCore().attachInit(initialization5);	
+		
+		<!--sap.m.MessageBox -->
+		function display() {
+			var oButton = new sap.m.Button({text: "Click me."});
+			
+			oButton.attachPress(function() {
+				jQuery.sap.require("sap.m.MessageBox");
+				sap.m.MessageBox.information("Hello SAPUI5!", {						
+					title: "SAPUI5 button test"
+				});
+			});
+			
+			oButton.placeAt("content");
+		}
+		
+		sap.ui.getCore().attachInit(display);
+					
+		</script>
+
+</head>
+<body class="sapUiBody" role="application">
+	<div id="content"></div>
+</body>
+</html>
