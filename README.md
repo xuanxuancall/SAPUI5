@@ -20,4 +20,4 @@ data-sap-ui-libs：追加"sap.ui.layout"诱导sap.ui.layout.Grid</br>
 Application area &nbsp; 部分</br>
 sap.m.Image：加载图像</br>
 --方法 src：图像文件存储URL的相对或绝对路径</br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; decorative：    
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; decorative：    
