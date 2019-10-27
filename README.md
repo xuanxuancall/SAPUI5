@@ -21,7 +21,7 @@ sap_Belize</br>
 以下列出ソース中使用的API </br>
 sap.ui.getCore() ：诱导sap.ui.core.Core(Core框架)，并通过sap.ui.getCore（）方法将其提供给应用程序 </br>
 --方法 attachInit():立即调用目标函数</br>
-
+</br>
 sap.m.Text ：段落嵌入 </br>
 --属性 text:显示的文本</br>
 </br>
@@ -33,7 +33,7 @@ alert() ：用于显示带有一条指定消息和一个 OK 按钮的警告框
 </br>
 function(oEvent) : oEvent参数是一个 event 对象 </br>
 --方法 getSource()：获取触发源控件 </br>
---方法 getId():获取触发源ID</br>
+  --方法 getId():获取触发源ID</br>
 </br>
 sap.m.Label() ：标签 </br>
 --属性 text:显示的文本</br>
