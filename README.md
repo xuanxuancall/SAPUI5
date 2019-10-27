@@ -1,6 +1,8 @@
 sapui5官方文档： https://sapui5.hana.ondemand.com
-
-index： 简单控件演示</br>
+简单控件演示</br>
+项目文件结构 </br>
+WebContent</br>
+&nbsp; &nbsp; >index.html </br>
 代码的主要构成：</br> 
 bootstrap </br>
 Application area </br>
