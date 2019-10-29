@@ -17,11 +17,11 @@ Application area </br>
 UI area</br>
 </br>
 bootstrap &nbsp; 部分</br>
-data-sap-ui-resourceroots='{"buttondemo":"./buttondemo"}'：view的存放位置
-※有以下三种方法来声明文件的位置：
-Application area 声明:sap.ui.localResources("obj")
-Application area 声明:jQuery.sap.registerModulePath("name","<url>")
-bootstrap 声明: data-sap-ui-resourceroots='{"name": "<url>"}'
+data-sap-ui-resourceroots='{"buttondemo":"./buttondemo"}'：view的存放位置</br>
+※有以下三种方法来声明文件的位置：</br>
+Application area 声明:sap.ui.localResources("obj")</br>
+Application area 声明:jQuery.sap.registerModulePath("name","<url>")</br>
+bootstrap 声明: data-sap-ui-resourceroots='{"name": "<url>"}'</br>
 </br>
 Application area &nbsp; 部分</br>
 sap.m.App:UI5移动应用程序的根元素</br>
