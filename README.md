@@ -35,10 +35,10 @@ button.view.xml代码的主要构成:</br>
 里面有四层标签</br>
 core:View：主要是声明namespace和controller name</br>
 Page：页面标签</br>
---属性 title：页面抬头</br>
+--title：页面抬头</br>
 content：内容标签</br>
 Button：按钮标签</br>
---属性 text：按钮文本“Please click.”</br>
+--text：按钮文本“Please click.”</br>
 &nbsp; &nbsp;press：响应事件为controller中的 onButtonPressed 方法</br>
 </br>
 button.controller.js代码的主要构成:</br>
