@@ -15,7 +15,7 @@ Application area </br>
 UI area</br>
 </br>
 bootstrap &nbsp; 部分</br>
-~
+~</br>
 </br>
 Application area &nbsp; 部分</br>
 jQuery.sap.registerModulePath("buttondemo","./buttondemo")：声明view位置
@@ -29,17 +29,17 @@ sap.ui.view:创建具有给定类型，名称和给定ID的视图</br>
 --sap.ui.core.mvc.ViewType.XML：XML类型，也可以直接写成‘XML’,或者把sap.ui.view替换成sap.ui.xmlview</br>
 </br>
 UI area&nbsp;部分</br>
-~
+~</br>
 </br>
 button.view.xml代码的主要构成:</br>
 里面有四层标签</br>
 core:View：主要是声明namespace和controller name</br>
-Page：页面标签
---属性 title：页面抬头
-content：内容标签
-Button：按钮标签
---属性 text：按钮文本“Please click.”
-&nbsp; &nbsp;press：响应事件为controller中的 onButtonPressed 方法
+Page：页面标签</br>
+--属性 title：页面抬头</br>
+content：内容标签</br>
+Button：按钮标签</br>
+--属性 text：按钮文本“Please click.”</br>
+&nbsp; &nbsp;press：响应事件为controller中的 onButtonPressed 方法</br>
 </br>
 button.controller.js代码的主要构成:</br>
 里面有一个方法</br>
