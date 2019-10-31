@@ -29,7 +29,7 @@ sap.ui.table.Table &nbsp; 声明表</br>
 --属性 &nbsp; width &nbsp; 表宽</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; visibleRowCount &nbsp; 可见行 </br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; firstVisibleRow &nbsp; 第一个可见行</br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; editable &nbsp; 是否可编辑
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; editable &nbsp; 是否可编辑</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; selectionMode &nbsp; 表的选择模式,单行还是多行
 --集合 &nbsp; title &nbsp; 表格标题</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; columns &nbsp; 添加列</br>
