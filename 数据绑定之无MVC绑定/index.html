@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m, sap.ui.table"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+		   	var oJsondata = {
+		   	  "Countliers" : 2,
+		   	  "liers"      :[{
+		   		  "ID"   : 10437,
+		   		  "Name" : "koko"
+		   	  },{
+		   		  "ID"   : 10999,
+		   		  "Name" : "zhangsan"
+		   	  }] 
+		   	};
+		   	
+		   	var oModel = sap.ui.model.json.JSONModel();
+		   	oModel.setData(oJsondata);
+		   	sap.ui.getCore().setModel(oModel);
+		   	
+		   	var Idcol = new sap.ui.table.Column({
+		   		label:new sap.m.Label({text:"工号"}),
+		   		template:new sap.m.Text().bindProperty("text","ID"),
+		   		sortProperty:"ID",
+		   		width:"40%"
+		   	});
+		   	
+		   	var Namecol = new sap.ui.table.Column({
+		   		label:new sap.m.Label({text:"姓名"}),
+		   		template:new sap.m.Text().bindProperty("text","Name"),
+		   		sortProperty:"Name",
+		   		width:"60%"
+		   	});	
+		   	
+		   	var Table = new sap.ui.table.Table({
+		   		width:"100%",
+		   		title:"资源查询",
+		   		visibleRowCount:2,
+		   		firstVisibleRow:0,
+		   		eidtable:false,
+		   		selectionMode:sap.ui.table.SelectionMode.Single,
+		   		columns:[Idcol,Namecol]
+		   	})
+		   	
+		   	Table.setModel(oModel);
+		   	Table.bindRows("/liers");
+		   	
+		   	var oPage = new sap.m.Page("masterpage",{
+		   		title:"资源",
+		   		content:[Table]
+		   	});
+		   	
+		   	var App = new sap.m.App("myApp");
+		   	App.addPage(oPage);
+		   	App.placeAt("content")
+		   	
+		   	
+		   	
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
