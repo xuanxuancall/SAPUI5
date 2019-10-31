@@ -34,7 +34,7 @@ sap.ui.table.Table &nbsp; 声明表</br>
 --集合 &nbsp; title &nbsp; 表格标题</br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; columns &nbsp; 添加列</br>
 --函数 &nbsp; setModel() &nbsp; 为程序诱导模型</br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bindRows &nbsp; 绑定实际数据</br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bindRows() &nbsp; 绑定实际数据</br>
 sap.m.Page &nbsp; 屏幕容器</br>
 --属性 &nbsp; title &nbsp; 屏幕标题</br>
 --集合 &nbsp; content &nbsp; 页面内容</br>
